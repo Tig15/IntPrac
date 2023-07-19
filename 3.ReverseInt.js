@@ -1,25 +1,21 @@
-// First Way to Solve this Problem
-
+// One Way to Solve
 function revInt(num){
-    const reversed = parseInt(num).toString().split('').reverse().join('')
+    const reversed = parseInt(num.toString().split('').reverse().join(''))
     return reversed;
 }
 
-const Intrev = 12345
-console.log(revInt(Intrev))
+const input = 6463
+console.log(revInt(input))
 
+// Second Way to Solve
 
-
-// Second Way to Solve this Problem
-
-function reveInt(num1){
+function revsInt(num){
     let reversed = 0
-    while( num1 !== 0){
-        reversed = reversed * 10 + num1 % 10;
-        num1 = Math.floor(num1 / 10)
+
+    while(num!==0){
+        reversed = reversed * 10 + num % 10
+        num = Math.floor(num/10)
     }
     return reversed
 }
-
-const intRev = 2435
-console.log(reveInt(intRev))
+console.log(revsInt(input))

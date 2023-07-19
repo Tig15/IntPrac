@@ -1,22 +1,25 @@
-// First Way to Solve this Problem
-function reverseString(str){
-    var reverse = str.split(' ').reverse().join(' ')
-    return reverse
+// One Way to Solve
+function revString(str){
+    const wordsArr = str.split('')
+
+    const revArr = wordsArr.reverse()
+
+    const revStr = revArr.join('')
+    return revStr
 }
 
-const sent = "Hey! How are you doing?"
-console.log(reverseString(sent))
+const input = "Hello"
+console.log(revString(input))
 
-// Second Way to Solve this Problem
+// Second Way to Solve
 
 function revStr(str1){
-    let newStr = ""
-    for(let i = str1.length - 1; i >= 0; i--){
+    let newStr = ''
+
+    for(let i = str1.length-1;i>=0;i--){
         newStr += str1[i]
     }
-
-    return newStr
+    return newStr;
 }
 
-const sente = "loow"
-console.log(revStr(sente))
+console.log(revStr(input))

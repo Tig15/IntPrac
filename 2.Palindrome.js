@@ -1,24 +1,24 @@
-// First way to Solve this Problem
-
-function palin(str){
-    // let reversed = String(str).split('').reverse().join('')
-    let reversed = str.split('').reverse().join('')
-    return reversed == str
+// One Way to Solve
+function palon(str){
+    // const reversed = str.split(' ').reverse().join(' ')
+    const reversed = String(str).split(' ').reverse().join(' ')
+    return str == reversed
 }
 
-const woring = "level"
-console.log(palin(woring))
+const input = "level"
+console.log(palon(input))
 
-// Second way to Solve this Problem
+// Second Way to Solve
 
 function palome(str1){
     let reversed = []
+
     for(const char of str1){
         reversed.unshift(char)
     }
-    const reversedStr = reversed.join('')
-    return str1 == reversedStr
+
+    revStr = reversed.join('')
+    return str1 == revStr;
 }
 
-const worden = "faf0"
-console.log(palome(worden))
+console.log(palome(input))

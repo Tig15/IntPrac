@@ -1,13 +1,11 @@
-const revArr = (arr) => {
-    const reversed = []
+function revArr(arr){
+    let reversed = []
 
-    for(let i = arr.length-1;i>=0;i--){
+    for(let i=arr.length-1;i>=0;i--){
         reversed.push(arr[i])
     }
     return reversed
 }
 
-const input = ['1', '2','5', '4']
+const input = [2,5,6,7]
 console.log(revArr(input))
-
- 

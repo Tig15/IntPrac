@@ -1,11 +1,8 @@
-const anaGram = (words1, words2) => {
-    const sortWords1 = words1.toLowerCase().split("").sort().join('')
-    const sortWords2 = words2.toLowerCase().split("").sort().join('')
+function anaGram(word1, word2){
+    const words1 = word1.toLowerCase().split('').sort().join('')
+    const words2 = word2.toLowerCase().split('').sort().join('')
 
-    return sortWords1 == sortWords2
+    return words1 == words2;
 }
 
-const inp1 = "listen"
-const inp2 = "silent"
-
-console.log(anaGram(inp1, inp2))
+console.log(anaGram('listen','silent'))
